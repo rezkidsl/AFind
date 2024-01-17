@@ -167,9 +167,9 @@ def make_fiture(lines, signal_type):
     minPQ = min(list_baru_PQ)
     meanPQ = np.mean(list_baru_PQ)
     stdevPQ = np.std(list_baru_PQ)
-    total_qrs.append(['HeartRate','maxRR','minRR','meanRR','stdevRR','maxQRS','minQRS','meanQRS','stdevQRS','maxTP','minTP','meanTP','stdevTP',
+    total_qrs.append(['HeartRate','maxRR','minRR','meanRR','stdevRR','maxTP','minTP','meanTP','stdevTP',
             'maxPQ','minPQ','meanPQ','stdevPQ'])
-    total_qrs.append([HeartRate,maxRR,minRR,meanRR,stdevRR,maxQRS,minQRS,meanQRS,stdevQRS,maxTP,minTP,meanTP,stdevTP,maxPQ,minPQ,meanPQ,stdevPQ])
+    total_qrs.append([HeartRate,maxRR,minRR,meanRR,stdevRR,maxTP,minTP,meanTP,stdevTP,maxPQ,minPQ,meanPQ,stdevPQ])
     return total_qrs
 
 

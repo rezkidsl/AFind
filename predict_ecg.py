@@ -19,7 +19,7 @@ def predict(lines, status):
     df_test = pd.DataFrame(fitur_n_json)
 
     df_inference = df_test.drop(
-        columns=['maxRR', 'maxQRS', 'minQRS', 'meanQRS', 'stdevQRS', 'maxTP'])
+        columns=['maxPQ'])
 
     prediksi = loaded_model.predict_proba(df_inference.values)
     if prediksi.argmax() == 1:

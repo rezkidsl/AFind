@@ -9,7 +9,8 @@ import json
 
 
 app = FastAPI(title='Rezki')
-origins = ["http://localhost:3000/"]
+
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -18,7 +19,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 class PayloadECG(BaseModel):
     Lines_ECG: List
     Status: int
